@@ -12,7 +12,7 @@ def connection(ssid, password):
             print("Conectado!!!")
             break
         print("Desconectado")
-        time.sleep(1)
+        time.sleep(2)
         attempt += 1
     return station
 

@@ -13,20 +13,21 @@ def sendTemperatureAndHumidityToThingSpeak(api_key, temperature, humidity):
     print(response.text)
     response.close()
 
-station = connection("KAMILA", '12345678')
+# Substitua 'SSID' e 'senha_wifi' pelo SSID e senha da sua rede Wi-Fi, respectivamente
+station = connection("SSID", 'senha_wifi')
 if not station.isconnected():
     print("Erro de conexão com a rede WIFI! Tente novamente.")
 else:
     print("Conexão realizada com sucesso!")
 #     station.disconnect()
 
-
 while True:
     d.measure()
     t = d.temperature()
     h = d.humidity()
     
-    sendTemperatureAndHumidityToThingSpeak('EZBXXRD6C0TDBHO4', t,h)
+    # Substitua 'sua_chave_API_ThingSpeak' pela sua chave de API do ThingSpeak
+    sendTemperatureAndHumidityToThingSpeak('sua_chave_API_ThingSpeak', t,h)
       
     print("Disciplina: Cloud, IoT e Indústria 4.0 - 2024/1º")
     print("Professor: Valmir Moro")
@@ -50,7 +51,4 @@ while True:
         r.value(0)
         print("Rele desligado")
 
-    
     time.sleep(5)
-
-

@@ -25,6 +25,10 @@ Este é um projeto de estação climática que utiliza um sensor DHT11 para medi
 5. Carregue o código na placa microcontroladora.
 6. Observa a saída da estação climática para monitorar a temperatura, umidade relativa do ar e o estado do relé.
 
+## Visualização dos Dados
+
+Os dados enviados pela estação climática podem ser visualizados no [ThingSpeak](https://thingspeak.com/channels/2502279).
+
 ## Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
